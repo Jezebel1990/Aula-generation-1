@@ -1,10 +1,7 @@
 package ProjetoBloco1;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Scanner;
-
 public class Jogos extends Listas{
+
 	
 	public Jogos()
 	{
@@ -15,66 +12,81 @@ public class Jogos extends Listas{
 	@Override
 	public List<String> lista1()
 	{
-		List<String> listaAcao = new ArrayList<String>();
-		listaAcao.add("Cobra kai");
-		listaAcao.add("Vikings");
-		listaAcao.add("The Umbrella Academy – HQ");
-		listaAcao.add("The Boys");
-		return listaAcao;
+		List<String> listaTabuleiro = new ArrayList<String>();
+		listaTabuleiro.add("Banco ImobiliÃ¡rio");
+		listaTabuleiro.add("Xadrez");
+		listaTabuleiro.add("Damas");
+		listaTabuleiro.add("GamÃ£o");
+		listaTabuleiro.add("Ludo");
+		listaTabuleiro.add("DominÃ³");
+		listaTabuleiro.add("Jogo da Vida");
+		return listaTabuleiro;
 	}
 	@Override
 	public List<String> lista2()
 	{
-		List<String> listaTerror = new ArrayList<String>();
-		listaTerror.add("The Purge");
-		listaTerror.add("História de Horror Americana (American Horror Story) ");
-		listaTerror.add("A Maldição da Residência Hill");
-		listaTerror.add("Mindhunter");
-		return listaTerror;
+		List<String> listaCartas = new ArrayList<String>();
+		listaCartas.add("UNO");
+		listaCartas.add("Truco");
+		listaCartas.add("PaciÃªncia");
+		listaCartas.add("Buraco");
+		listaCartas.add("Rouba Monte");
+		listaCartas.add("Mau Mau");
+		listaCartas.add("Quem Sou Eu?");
+		return listaCartas;
 	}
 	@Override
 	public List<String> lista3()
 	{
-		List<String> listaRomance = new ArrayList<String>();
-		listaRomance.add("Modern Family – Familiar");
-		listaRomance.add("Modern Love");
-		listaRomance.add("Doces Magnólias");
-		return listaRomance;
+		List<String> listaPapelCaneta = new ArrayList<String>();
+		listaPapelCaneta.add("Stop");
+		listaPapelCaneta.add("Jogo da Velha");
+		listaPapelCaneta.add("Forca");
+		listaPapelCaneta.add(" Batalha Naval");
+		listaPapelCaneta.add("Detetive");
+		listaPapelCaneta.add("Jogo do Pontinho");
+		listaPapelCaneta.add("Jogo do Desenho");
+		return listaPapelCaneta;
 	}
 	@Override
 	public List<String> lista4()
 	{
-		List<String> listaFiccaoFantasia = new ArrayList<String>();
-		listaFiccaoFantasia.add("Black Mirror");
-		listaFiccaoFantasia.add("Dark");	
-		listaFiccaoFantasia.add("Carnival Row");
-		listaFiccaoFantasia.add("Stranger Things");
-		listaFiccaoFantasia.add("Carnival Row");
-		listaFiccaoFantasia.add("Orphan Black");
-		return listaFiccaoFantasia;
+		List<String> listaApp = new ArrayList<String>();
+		listaApp.add("Clash Royale");
+		listaApp.add("Mario Kart Tour");
+		listaApp.add("Shadow Fight");
+		listaApp.add("Garena Free Fire");
+		listaApp.add("PUBG Mobile");
+		listaApp.add("Minecraft");
+		listaApp.add("Helix Jump");
+		return listaApp;
 	}
 	@Override
 	public List<String> lista5()
 	{
-		List<String> listaDrama = new ArrayList<String>();
-		listaDrama.add("Anne With an \"E\"");
-		listaDrama.add("The Crown");
-		listaDrama.add("Olhos que Condenam");
-		listaDrama.add("This is Us");
-		
-		return listaDrama;
+		List<String> listaRpg = new ArrayList<String>();
+		listaRpg.add("Final Fantasy");
+		listaRpg.add("Wild Arms");
+		listaRpg.add("Assassinâ€™s Creed Odyssey");
+		listaRpg.add("Breath of Fire");
+		listaRpg.add("Diablo II");
+		listaRpg.add("Mass Efect 3");
+		listaRpg.add("Fable");
+		return listaRpg;
 	}
-	@Override
-	public List<String> lista6()
-	{
-		List<String> listaAnimacao = new ArrayList<String>();
-		listaAnimacao.add("BoJack Horseman");
-		listaAnimacao.add("Rick e Morty");
-		listaAnimacao.add("Sem Maturidade para Isso");
-		listaAnimacao.add("The Midnight Gospel");
-		return listaAnimacao;
+		@Override
+		public List<String> lista5()
+		{
+			List<String> listaMemoria = new ArrayList<String>();
+			listaMemoria.add("Sudoku");
+			listaMemoria.add("Tangram");
+			listaMemoria.add("Racha Cuca");
+			listaMemoria.add("Palavras Cruzadas");
+			listaMemoria.add("Dobble");
+			listaMemoria.add("CaÃ§a-palavras");
+			listaMemoria.add("Quebra cabeÃ§a");
+			return listaMemoria;	
+	
 	}
 	
-
-
 }
