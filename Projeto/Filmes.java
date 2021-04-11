@@ -6,28 +6,26 @@ import java.util.Scanner;
 
 public class Filmes extends Listas {
 	
-	public Filmes()
-	{
+	public Filmes() {}
 	
-	}
 	Scanner scanner = new Scanner(System.in);
 
 	@Override
 	public List<String> lista1()
 	{
 		List<String> listaAcao = new ArrayList<String>();
-		listaAcao.add("24h");
-		listaAcao.add("Spy");	
-		listaAcao.add("Spy");
+		listaAcao.add("C√≥digo de Conduta");
+		listaAcao.add("Polar");	
+		listaAcao.add("O Alvo");
 		return listaAcao;
-	}
+	)
 	@Override
 	public List<String> lista2()
 	{
 		List<String> listaTerror = new ArrayList<String>();
-		listaTerror.add("Chuck");
-		listaTerror.add("Us");	
-		listaTerror.add("Us");
+		listaTerror.add("Evil Dead");
+		listaTerror.add("O Iluminado");
+		listaTerror.add("Annabelle");
 		return listaTerror;
 	}
 	@Override
@@ -36,58 +34,82 @@ public class Filmes extends Listas {
 		List<String> listaRomance = new ArrayList<String>();
 		listaRomance.add("Orgulho e Preconceito");
 		listaRomance.add("Titanic");	
-		listaRomance.add("Titanic");
+		listaRomance.add("Um dia");
 		return listaRomance;
 	}
 	@Override
 	public List<String> lista4()
 	{
 		List<String> listaFiccaoFantasia = new ArrayList<String>();
+		listaFiccaoFantasia.add("Senhor dos An√©is");
+		listaFiccaoFantasia.add("Harry Potter");	
 		listaFiccaoFantasia.add("Star Wars");
-		listaFiccaoFantasia.add("Star Trek");	
-		listaFiccaoFantasia.add("Star Trek");
 		return listaFiccaoFantasia;
 	}
-
+	@Override
+	public List<String> lista5()
+	{
+		List<String> listaDrama = new ArrayList<String>();
+		listaDrama.add("A Espera de um Milagre");
+		listaDrama.add("Patch Adams");	
+		listaDrama.add("O Homem Bicenten√°rio");
+		return listaDrama;
+	}
+	@Override
+	public List<String> lista6()
+	{
+		List<String> listaAnimacao = new ArrayList<String>();
+		listaAnimacao.add("Aladdin");
+		listaAnimacao.add("Moana");	
+		listaAnimacao.add("Divertidamente");
+		return listaAnimacao;
+	}
 	@Override
 	public void filmes (String filmes)
 	{
 		
-			System.out.println("\nEscreva uns dos genero de filme:\n-AÁ„o\n-Terror\n-Romance\n-FicÁ„o e Fantasia");
+			System.out.println("\nDigite o n√∫mero da op√ß√£o desejada:\n1- A√ß√£o\n2- Terror\n3- Romance"
+					+ "\n4- Fic√ß√£o e Fantasia\n5- Drama\n6- Anima√ß√£o");
 			filmes = scanner.nextLine(); 
 		switch (filmes)
 		{
-		case "AÁ„o" :
+		case "1" :
 			scanner.nextLine();
-			System.out.println("Serie ou filme");
+			System.out.println("Digite o n√∫mero da op√ß√£o desejada:\n1- serie\n2- filme");
 			String op = scanner.nextLine();
 			switch (op)
 			{
-			case "Serie":
+			case "1":
 				System.out.println(lista2());
-			case "Filme":
+			case "2":
 				System.out.println(lista1());
 			//System.out.println(lista1());
 			break;
-		case  "Terror" :
+		case "2" :
 			scanner.nextLine();
 			System.out.println(lista2());
 			break;
-		case"Romance" :
+		case"3" :
 			scanner.nextLine();
 			System.out.println(lista3());
 			break;
-		case "FicÁ„o e Fantasia" :
+		case "4" :
 			scanner.nextLine();
 			System.out.println(lista4());
 			break;
+		case "5" :
+			scanner.nextLine();
+			System.out.println(lista5());
+			break;
+		case "6" :
+			scanner.nextLine();
+			System.out.println(lista6());
+			break;
 		    default:
-			System.out.println("O que vocÍ escreveu n„o È uma das opÁıes acima. Tente novamente!");
+			System.out.println("Op√ß√£o inv√°lida. Tente novamente!");
 		    break;
 			}
 		}
 		
 	}	
-
-
 }
