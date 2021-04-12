@@ -75,7 +75,7 @@ public class Jogos extends Listas{
 		return listaRpg;
 	}
 		@Override
-		public List<String> lista5()
+		public List<String> lista6()
 		{
 			List<String> listaMemoria = new ArrayList<String>();
 			listaMemoria.add("Sudoku");
